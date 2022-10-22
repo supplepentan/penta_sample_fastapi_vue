@@ -28,7 +28,7 @@ const fileUpload = (): void => {
         })
         .then((response: AxiosResponse<any, any>) => {
             let mineType: string | undefined = response.headers["content-type"];
-            if (mineType) {
+            if (mineType === "image/jpeg" | mineType === "image/png") {
                 console.log(response.headers["content-type"]);
                 const blob = new Blob([response.data], { type: mineType });
                 let url: string = URL.createObjectURL(blob);
