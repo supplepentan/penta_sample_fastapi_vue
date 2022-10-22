@@ -1,0 +1,34 @@
+.venv
+
+# penta_sample_fastapi_vue
+penta_sample_fastapi_vue/output/output.png
+penta_sample_fastapi_vue/upload/input.png
+
+# front
+front/dist
+front/node_modules
+
+# Logs
+front/logs
+front/*.log
+front/npm-debug.log*
+front/yarn-debug.log*
+front/yarn-error.log*
+front/pnpm-debug.log*
+front/lerna-debug.log*
+
+front/node_modules
+front/dist
+front/dist-ssr
+*.local
+
+# Editor directories and files
+front/.vscode/*
+front/!.vscode/extensions.json
+front/.idea
+front/.DS_Store
+front/*.suo
+front/*.ntvs*
+front/*.njsproj
+front/*.sln
+front/*.sw?
