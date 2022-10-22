@@ -18,7 +18,7 @@ PATH_INPUT_IMAGE = os.path.join(PATH_UPLOAD_FOLDER, "input.png")
 PATH_OUTPUT_IMAGE = os.path.join(PATH_OUTPUT_FOLDER, "output.png")
 
 
-app = FastAPI(title="さぷりぺんたんの被写体検出", description="被写体を抽出するよ", version="1.0")
+app = FastAPI(title="さぷりぺんたんのさんぷる", description="画像をグレイスケールにするよ", version="1.0")
 
 import mimetypes
 
@@ -57,7 +57,8 @@ async def index(file: UploadFile = File(...)):
     input_image.save(PATH_INPUT_IMAGE)
     output_image = input_image.convert("L")
     output_image.save(PATH_OUTPUT_IMAGE)
-    response = FileResponse(path=PATH_OUTPUT_IMAGE, filename="output.png")
+    output_finlename = os.path.basename(PATH_OUTPUT_IMAGE)
+    response = FileResponse(path=PATH_OUTPUT_IMAGE, filename=output_finlename)
     return response
 
 
