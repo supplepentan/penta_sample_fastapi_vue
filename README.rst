@@ -1,15 +1,16 @@
-# Backend
+## Backend
 
-## Backend (FastAPI) Server
+== Backend (FastAPI) Server
 
 cd penta_sample_fastapi_vue
 
 poetry run uvicorn main:app --reload
 
-# Frontend
+## Frontend
 
-## Front (Vite) Server
+== Front (Vite) Server
 
 cd front
 
 npm run dev
+
