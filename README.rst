@@ -15,10 +15,16 @@ Frontend
 =========
 
 -----------------------
-== Front (Vite) Server
+Front (Vite) Server
 -----------------------
 
 cd front
 
 npm run dev
+
+-----------------------
+Build
+-----------------------
+
+npm run build
 
