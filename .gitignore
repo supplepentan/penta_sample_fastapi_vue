@@ -1,6 +1,7 @@
 .venv
 
 # penta_sample_fastapi_vue
+penta_sample_fastapi_vue/__pycache__
 penta_sample_fastapi_vue/output/output.png
 penta_sample_fastapi_vue/upload/input.png
 
@@ -32,3 +33,4 @@ front/*.ntvs*
 front/*.njsproj
 front/*.sln
 front/*.sw?
+penta_sample_fastapi_vue/__pycache__/main.cpython-38.pyc

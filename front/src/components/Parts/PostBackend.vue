@@ -3,13 +3,13 @@ import axios, { AxiosResponse } from "axios";
 import { ref } from "vue";
 
 interface Props {
-    buckendUrl: string
+    backendUrl: string
 }
 
 const props = defineProps<Props>();
-
 const file = ref();
 const previewImage = ref();
+
 const fileSelected = (event: any): void => {
     file.value = event.target.files[0];
     const reader = new FileReader();
@@ -19,11 +19,11 @@ const fileSelected = (event: any): void => {
     reader.readAsDataURL(event.target.files[0]);
 };
 const fileUpload = (): void => {
-    console.log(props.buckendUrl);
+    console.log(props.backendUrl);
     const formData = new FormData();
     formData.append("file", file.value);
     axios
-        .post(props.buckendUrl, formData, {
+        .post(props.backendUrl, formData, {
             responseType: "blob",
         })
         .then((response: AxiosResponse<any, any>) => {
