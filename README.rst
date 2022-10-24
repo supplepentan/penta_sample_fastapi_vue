@@ -15,7 +15,7 @@ Frontend
 =========
 
 -----------------------
-Front (Vite) Server
+Front (Vite and Vue.js) Server
 -----------------------
 
 cd front

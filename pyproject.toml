@@ -2,7 +2,7 @@
 name = "penta_sample_fastapi_vue"
 version = "0.1.0"
 description = ""
-authors = ["supplepentan <pentagramog@gmail.com>"]
+authors = ["supplepentan"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
